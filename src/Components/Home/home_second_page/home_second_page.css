@@ -1,12 +1,90 @@
 .hsp_outer{
-    border: 0.2rem solid black;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 0.1px solid black; */
 }
 .hsp_outer_mid{
-    border: 0.2rem solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80vw;
+    /* border: 0.2rem solid black; */
 }
 .hsp_outer_mid_left{
-    border: 0.2rem solid black;
+    /* border: 0.2rem solid black; */
 }
 .hsp_outer_mid_right{
-    border: 0.2rem solid black;
+    width: 25vw;
+    display: flex;
+    flex-direction: column; /* remove this div for breakage */
+    align-items: left; 
+    justify-content: center;
+    text-align: left;
+    /* border: 0.2rem solid black; */
+}
+.hsp_outer_mid_left_image{
+    width: 35vw;
+}
+.hsp_outer_mid_right h2{
+    font-family: 'Sombra';
+    font-style: normal;
+    font-weight: 700;
+    color: #000000;
+}
+.hsp_outer_mid_right span{
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: small;
+    color: #505050;;
+}
+.hsp_outer_mid_right button{
+    margin-top: 1rem;
+    width: 30%;
+    height: 3rem;
+    color: #FFFFFF;
+    font-family: 'Sombra';
+    font-style: normal;
+    font-weight: 700;
+    background-color: #053B3F;
+    border-radius: 0.2rem;
+    padding: 0.2rem;
+}
+@media screen and (max-width: 768px){
+    .hsp_outer{
+        margin-top: 1rem;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* border: 0.1px solid black; */
+    }
+    .hsp_outer_mid{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 90vw;
+        /* border: 0.2rem solid black; */
+    }
+    .hsp_outer_mid_right{
+        width: 80vw;
+        display: flex;
+        flex-direction: column; /* remove this div for breakage */
+        align-items: left; 
+        justify-content: center;
+        text-align: left;
+        /* border: 0.2rem solid black; */
+    }
+    .hsp_outer_mid_left_image{
+        width: 50vw;
+    }
+}   
+@media screen and (max-width: 500px){
+    .hsp_outer_mid_left_image{
+        width: 70vw;
+    }
 }

@@ -16,7 +16,7 @@ function HomeFirstPage(){
                     With Some Valuable Testimonial Shared By Common People Of Different Treatments. 
                     Find Out Which Therapy Out Of Many May Suit You Best !
                 </span>
-                <SearchBar/>
+                <SearchBar className="hfp_outer_left_searchbar"/>
             </div>
             <div className="hfp_outer_right">
                 <img src="./Images/UmbrellaOverview.png" alt="" className="hfp_outer_right_image"/>

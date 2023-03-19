@@ -21,7 +21,7 @@
 }
 .hfp_outer_left span{
     font-family: 'Noto Sans';
-    font-size: small;
+    font-style: normal;
     font-weight: 400;
     color: #505050;
 }
@@ -31,11 +31,17 @@
     color: #000000;;
 }
 .hfp_outer_left h5{
-    color: #5A3636;
+    font-family: 'Sombra';
+    font-style: normal;
     font-weight: 700;
+    color: #5A3636;
 }
+/* .hfp_outer_left_searchbar{
+    margin-top: 1rem;
+} */
 @media screen and (max-width: 768px){
     .hfp_outer{
+        /* margin-top: 1rem; */
         width: 100vw;
         display: flex;
         flex-direction: column;

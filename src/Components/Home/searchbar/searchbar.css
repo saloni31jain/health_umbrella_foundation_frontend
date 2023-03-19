@@ -1,7 +1,10 @@
 .searchbar_outer{
+    /* margin-top: 1rem; */
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
+    /* background-color: #ffff; */
+    border: 0.2 solid black;
 }
 .searchbar_outer_input{
     border-radius: 0.2rem;

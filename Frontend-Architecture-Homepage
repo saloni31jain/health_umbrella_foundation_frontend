@@ -1,0 +1,32 @@
+Architecture and Workflow in React
+You are requested to open the figma model for understanding this document
+There will be many nested divisions made inside
+div->Division
+Nomenclature -> every div will have separate naming related to its component for easy code
+handling and styling purpose. eg-> Home_Outer, after nesting inside (Home_Outer_search)
+something like this. (Very important otherwise whole code structure would go down)
+Div outer for safety and changes will be there in every single component.
+Will take a separate session on file handling in React.
+1). Navbar at top -> React Component-> Div outer for safety and changes, then 2 div inside
+outer div(left div and right div) right div with unordered list, inside unordered list will have Li tags
+for nav links.
+2). Umbrella image and search bar-> React Component ->Background color light blue, Div outer
+for safety and changes, then 2 div inside outer div for left and right part handling, using
+usestates for user entry in search bar.
+3). Our Mission-> React Component -> Outer Div, 2 div inside outer div for left and right part
+handling,
+Left part with video link and image, right part with our mission text.
+4). Testimonials-> React Component -> Outer div, Mid div inside outer div which contains
+testimonial, and experience boxes, then 2 div inside mid div for top and bottom part.
+Bottom part contains again 2 div with left and right experience box handling.
+5). Video Links-> React Component -> Outer div, Mid div inside outer div which contains upper
+text,mid text and images with video links then 2 div inside mid div for top and bottom part.
+Bottom part contains a loop for video rendering.
+6). Bottom search bar-> React component -> background umbrella image, outer div, single div
+for all the text and search bar.
+7). Footer-> React component -> Outer div, 2 div inside outer, 3 divs inside Outer_top div,
+leftmost for follow us and text, mid div for quick links,rightmost for Reach us section.
+Outer_bottom div handles terms and condition text.
+8). Disclaimer -> React Component -> Single div for whole text
+You might not understand this but I will make you go through just in one session .
+→ By Shubham Bansal

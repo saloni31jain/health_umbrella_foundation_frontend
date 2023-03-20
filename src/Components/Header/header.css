@@ -1,6 +1,12 @@
+.adjusting_navbar{
+    padding-right: 2rem;
+}
 .navbar{
     background-color: #053B3F;
     width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
 }
 .navbar-logo{
     margin-left: 4vw;
@@ -13,6 +19,7 @@
     position: relative;
     text-decoration:none;
     display:inline-block;
+    font-weight: bold;
 }
 .underline:after {
     display:block;

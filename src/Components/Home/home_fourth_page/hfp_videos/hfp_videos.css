@@ -1,0 +1,24 @@
+.hfourthpv_outer{
+    margin: 1rem;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.hfourthpv_outer_text{
+    text-align: left;
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    font-family: 'Sombra';
+    font-style: normal;
+    font-weight: 700;
+    color: #ffff;
+}
+.hfourthpv_outer img{
+    width: 30vw;
+}
+@media screen and (max-width: 768px){
+    .hfourthpv_outer img{
+        width: 100%;
+    } 
+}

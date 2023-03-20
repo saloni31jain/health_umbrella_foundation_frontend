@@ -5,11 +5,12 @@ function HomeSecondPage(){
     return(
         <div className="hsp_outer">
             <div className="hsp_outer_mid">
-                <div className="hsp_outer_mid_left"> {/* remove this div for breakage */}
+                {/* remove this down div for breakage */}
+                <div className="hsp_outer_mid_left"> 
                     <img src="./Images/maskgroup.png" alt="" className="hsp_outer_mid_left_image"/>
                 </div>
                 <div className="hsp_outer_mid_right">
-                    <h2 className="hsp_outer_mid_right_heading">Our Mission</h2>
+                    <h1 className="hsp_outer_mid_right_heading">Our Mission</h1>
                     <span className="hsp_outer_mid_right_text">The Internet contains 
                     huge amounts of data in the form of
                      testimonials of patients in the form of ebooks, websites, 

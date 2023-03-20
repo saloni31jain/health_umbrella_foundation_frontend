@@ -1,4 +1,5 @@
 .hsp_outer{
+    margin-top: 5rem;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -10,25 +11,27 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    width: 80vw;
+    width: 100vw;
     /* border: 0.2rem solid black; */
 }
 .hsp_outer_mid_left{
     /* border: 0.2rem solid black; */
 }
 .hsp_outer_mid_right{
-    width: 25vw;
+    margin-right: 4rem;
+    width: 35vw;
     display: flex;
-    flex-direction: column; /* remove this div for breakage */
+    /*remove this line below for breakage */
+    flex-direction: column; 
     align-items: left; 
     justify-content: center;
     text-align: left;
     /* border: 0.2rem solid black; */
 }
 .hsp_outer_mid_left_image{
-    width: 35vw;
+    width: 45vw;
 }
-.hsp_outer_mid_right h2{
+.hsp_outer_mid_right h1{
     font-family: 'Sombra';
     font-style: normal;
     font-weight: 700;
@@ -38,45 +41,50 @@
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: small;
-    color: #505050;;
+    font-size: large;
+    color: #505050;
+    line-height: 1.3rem;
 }
 .hsp_outer_mid_right button{
     margin-top: 1rem;
+    padding: 1rem 0rem;
     width: 30%;
-    height: 3rem;
     color: #FFFFFF;
     font-family: 'Sombra';
     font-style: normal;
     font-weight: 700;
     background-color: #053B3F;
     border-radius: 0.2rem;
-    padding: 0.2rem;
 }
 @media screen and (max-width: 768px){
     .hsp_outer{
-        margin-top: 1rem;
+        margin-top: 4rem;
         width: 100vw;
         display: flex;
         align-items: center;
         justify-content: center;
-        /* border: 0.1px solid black; */
+        /* border: 0.2px solid black; */
     }
     .hsp_outer_mid{
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: center;
         width: 90vw;
         /* border: 0.2rem solid black; */
     }
     .hsp_outer_mid_right{
+        margin: 0rem;
         width: 80vw;
         display: flex;
-        flex-direction: column; /* remove this div for breakage */
+        flex-direction: column; 
         align-items: left; 
         justify-content: center;
         text-align: left;
+        /* border: 0.2rem solid black; */
+    }
+    .hsp_outer_mid_left{
+        margin-top: 2rem;
         /* border: 0.2rem solid black; */
     }
     .hsp_outer_mid_left_image{
@@ -86,5 +94,16 @@
 @media screen and (max-width: 500px){
     .hsp_outer_mid_left_image{
         width: 70vw;
+    }
+    .hsp_outer_mid_right button{
+        margin-top: 1rem;
+        padding: 1rem 0rem;
+        width: 100%;
+        color: #FFFFFF;
+        font-family: 'Sombra';
+        font-style: normal;
+        font-weight: 700;
+        background-color: #053B3F;
+        border-radius: 0.2rem;
     }
 }

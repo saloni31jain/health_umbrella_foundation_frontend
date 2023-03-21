@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../Footer/footer";
 import "./home.css";
 import HomeFirstPage from "./home_first_page/home_first_page";
 import HomeFourthPage from "./home_fourth_page/home_fourth_page";
@@ -13,6 +14,7 @@ function Home(){
             <HomeSecondPage className="homesecondpage"/>
             <HomeThirdPage className="homethirdpage"/>
             <HomeFourthPage className="homefourthpage"/>
+            
         </div>
     );
 }

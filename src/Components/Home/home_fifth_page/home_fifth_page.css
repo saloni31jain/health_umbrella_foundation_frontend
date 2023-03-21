@@ -1,18 +1,62 @@
-.hfifthp{
-    background: #D4FFFF;;
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+.hfifthp {
+    background: #D4FFFF;
+    
 }
 
 .hfifthp_upper {
     /* font-size: 1vw; */
     text-align: center;
-    padding:3vw;
+    padding: 3vw;
+    padding-top: 5vw;
+    border:1px solid black;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: -5rem;
 }
-.hfifthp_upper p{
-    margin:2.3vw;
+
+.hfifthp_upper p {
+    /* margin:2.3vw;
     font-weight: 400;
-    font-size: 2vw;
+    font-size: 2vw; */
+    font-family: 'Sombra';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 15.5px;
+    line-height: 1.3rem;
+    /* display: flex;
+    align-items: center;
+    text-align: center; */
+    /* margin-bottom: -4vw; */
+    border:1px solid black;
+
+    color: #000000;
 }
-.hfifthp_upper h3{
-    font-weight: bold;
-    margin: -1vw;
+
+.hfifthp_upper h3 {
+    
+    /* margin: -1vw;  */
+    font-family: 'Sombra';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 34px;
+    line-height: 38px;
+    border:1px solid black;
+}
+
+/* .hfifthp_lower{
+    padding:0 1vw 0 1vw;
+} */
+.hfifthp_lower img{
+    width:85vw;
+    margin:auto;
+    border:1px solid black;
+}
+.search{
+    position: relative;
+    padding-left: 25vw;
+    padding-right: 25vw;
+    top:4vw;
+    
 }

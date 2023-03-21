@@ -14,7 +14,7 @@ function HomeFifthPage() {
                 <SearchBar />
             </div>
             <div className="hfifthp_lower">
-                <img src="./Images/Group 69.png" alt="" />
+                <img src="./Images/g69.png" alt="" />
             </div>
 
 

@@ -96,6 +96,6 @@
 
 @media screen and (max-width: 500px){
     .hfp_outer_right img{
-        width: 100%;
+        width: 90vw;
     }
 }

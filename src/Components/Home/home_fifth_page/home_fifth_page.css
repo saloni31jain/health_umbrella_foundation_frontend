@@ -1,0 +1,18 @@
+.hfifthp{
+    background: #D4FFFF;;
+}
+
+.hfifthp_upper {
+    /* font-size: 1vw; */
+    text-align: center;
+    padding:3vw;
+}
+.hfifthp_upper p{
+    margin:2.3vw;
+    font-weight: 400;
+    font-size: 2vw;
+}
+.hfifthp_upper h3{
+    font-weight: bold;
+    margin: -1vw;
+}

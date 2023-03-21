@@ -12,9 +12,9 @@ function Footer() {
                             all the latest testimonials of different diseases. That's why we invite
                             you to follow our social media handles.</p>
                         <div className="follow-us_links">
-                            <a href="https://www.youtube.com/"><img src="./Images/Instagram.png" alt="" /></a>
+                            <a href="https://www.instagram.com"><img src="./Images/Instagram.png" alt="" /></a>
                             {/* <a href="#"><img src="./Images/Dribbble.png" alt="" /></a> */}
-                            <a href="https://www.youtube.com/"><img src="./Images/Twitter.png" alt="" /></a>
+                            <a href="https://www.twitter.com/"><img src="./Images/Twitter.png" alt="" /></a>
                             <a href="https://www.youtube.com/"><img src="./Images/Youtube.png" alt="" /></a>
                         </div>
                     </div>

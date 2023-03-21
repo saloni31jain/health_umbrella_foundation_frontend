@@ -40,7 +40,7 @@
 
 .footer_upper_bottom p {
     margin:auto;
-    text-align: center;
+    text-align: right;
     /* position: relative;
     right: 9rem; */
 }
@@ -138,6 +138,11 @@
 .follow-us_links img {
     width: 2rem;
     height: 2rem;
+}
+
+
+.follow-us_links img:hover{
+    scale: 1.3;
 }
 
 

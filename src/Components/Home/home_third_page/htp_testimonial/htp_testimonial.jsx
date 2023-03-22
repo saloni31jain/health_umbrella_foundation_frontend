@@ -11,8 +11,10 @@ function HTPTestimonial(){
                 I have been suffering from migraine from 2 years. The treatment on the website helped me  
                 to cure it.I have been suffering from migraine from 2 years. The treatment 
                 on the website helped me to cure it.</span>
+                
             </div>
             <div className="htpt_outer_bottom">
+                
                 <span className="htpt_outer_bottom_name">
                     Sophia Nguyen
                 </span>

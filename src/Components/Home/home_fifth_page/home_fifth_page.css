@@ -88,6 +88,11 @@
     .hfifthp_lower img{
         display: none;
     }
+
+    .hfifthp_upper h3 {
+        font-size: 23px;
+
+    }
     .search{
         position: relative;
         padding-left: 25vw;

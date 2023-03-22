@@ -19,9 +19,16 @@ function HomeFourthPage(){
                     </span>
                 </div>
                 <div className="hfourthp_outer_mid_bottom">
-                    <HFPVideos/>
-                    <HFPVideos/>
-                    <HFPVideos/>
+                    <div className="hfourthp_outer_mid_bottom1">
+                        <HFPVideos/>
+                        <HFPVideos/>
+                        <HFPVideos/>
+                    </div>
+                    <div className="hfourthp_outer_mid_bottom2">
+                        <HFPVideos/>
+                        <HFPVideos/>
+                        <HFPVideos/>
+                    </div>
                 </div>
             </div>
         </div>

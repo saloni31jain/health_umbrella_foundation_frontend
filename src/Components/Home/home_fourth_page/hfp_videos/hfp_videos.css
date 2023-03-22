@@ -12,10 +12,16 @@
     font-family: 'Sombra';
     font-style: normal;
     font-weight: 700;
+    font-size: 1.11rem;
     color: #ffff;
 }
+
+.hfourthpv_outer_text a{
+    color:white;
+    text-decoration: none;
+}
 .hfourthpv_outer img{
-    width: 30vw;
+    width: 25vw;
 }
 @media screen and (max-width: 768px){
     .hfourthpv_outer img{

@@ -32,15 +32,32 @@
     line-height: 1rem;
     color: #505050;
 }
-.hfourthp_outer_mid_bottom{
+/* .hfourthp_outer_mid_bottom{
     margin-top: 1rem;
-    /* border: 0.2rem solid black; */
+    border: 0.2rem solid black;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     width: 50vw;
+} */
+.hfourthp_outer_mid_bottom{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3vw;
 }
+
+.hfourthp_outer_mid_bottom1{
+    display: flex;
+}
+.hfourthp_outer_mid_bottom2{
+    display: flex;
+}
+
+
+
+
+
 @media screen and (max-width: 768px){
     .hfourthp_outer_mid_bottom{
         margin-top: 1rem;

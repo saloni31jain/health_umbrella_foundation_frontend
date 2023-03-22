@@ -12,10 +12,10 @@ function Footer() {
                             all the latest testimonials of different diseases. That's why we invite
                             you to follow our social media handles.</p>
                         <div className="follow-us_links">
-                            <a href="https://www.instagram.com"><img src="./Images/Instagram.png" alt="" /></a>
+                            <a href="https://www.instagram.com" target="_blank"><img src="./Images/Instagram.png" alt="" /></a>
                             {/* <a href="#"><img src="./Images/Dribbble.png" alt="" /></a> */}
-                            <a href="https://www.twitter.com/"><img src="./Images/Twitter.png" alt="" /></a>
-                            <a href="https://www.youtube.com/"><img src="./Images/Youtube.png" alt="" /></a>
+                            <a href="https://www.twitter.com/" target="_blank"><img src="./Images/Twitter.png" alt="" /></a>
+                            <a href="https://www.youtube.com/" target="_blank"><img src="./Images/Youtube.png" alt="" /></a>
                         </div>
                     </div>
 
@@ -26,7 +26,7 @@ function Footer() {
                                 <a href="#">Home</a>
                                 <a href="#">About</a>
                                 <a href="#">Members</a>
-                                <a href="#">Feedback</a>
+                                <a href="#"><span>Donation</span></a>
                             </div>
                             <div className="quick-links_container-2">
                                 <a href="#">Newsletter</a>

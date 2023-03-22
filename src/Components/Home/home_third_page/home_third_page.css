@@ -4,7 +4,7 @@
 }
 
 .htp_outer_mid {
-    padding: 1rem;
+    padding: 0rem;
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
@@ -48,7 +48,7 @@
     /* background: #053B3F; */
     opacity: 0.4;
     /* transform: rotate(180deg); */
-    width: 11vw;
+    width: 9vw;
 }
 
 
@@ -70,4 +70,26 @@
         align-items: center;
         justify-items: center;
     }
+    .htp_outer_mid_top img{
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 1002px){
+    .htp_outer_mid_top img {
+        position: absolute;
+        /* left: 66rem; */
+        top: 3rem;
+        right:5vw;
+        /* background: #053B3F; */
+        opacity: 0.4;
+        /* transform: rotate(180deg); */
+        width: 9vw;
+    }
+    .htp_outer_mid{
+        padding: 0vw 5vw 0vw 5vw;
+    }
+
 }

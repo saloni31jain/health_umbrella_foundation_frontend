@@ -9,9 +9,9 @@ function HomeFirstPage(){
                 <h1 className="hfp_outer_left_heading">
                     Are You Confused about your line of treatment?
                 </h1>
-                <h3 className="hfp_outer_left_smallerheading">
+                {/* <h3 className="hfp_outer_left_smallerheading">
                     Which Therapy? Which Doctor? Which Clinic?
-                </h3>   
+                </h3>    */}
                 <span className="hfp_outer_left_text">
                     With Some Valuable Testimonial Shared By Common People Of Different Treatments. 
                     Find Out Which Therapy Out Of Many May Suit You Best !

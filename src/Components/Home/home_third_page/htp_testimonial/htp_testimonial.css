@@ -1,50 +1,113 @@
-.htpt_outer{
+.htpt_outer {
     margin: 1rem;
     /* border: 0.2rem solid black; */
     border-radius: 0.2rem;
-    box-shadow: 10px 10px 10px#bebebe75;
+    
 }
-.htpt_outer_top{
+
+.htpt_outer_top {
+    box-shadow: 10px 10px 10px#bebebe75;
     padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: left;
     justify-content: center;
     text-align: left;
-    /* border: 0.2rem solid black; */
+    border: 0.2rem solid black;
     background-color: #ffff;
 }
-.htpt_outer_top h4{
+
+.htpt_outer_top h4 {
     font-family: 'Sombra';
     font-style: normal;
     font-weight: 700;
     color: #000000;
     font-size: large;
 }
-.htpt_outer_top span{
+
+.htpt_outer_top span {
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 400;
     color: #505050;
     font-size: small;
 }
-.htpt_outer_bottom{
+
+.htpt_outer_bottom {
     padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 0.1vw;
 }
-.htpt_outer_bottom_name{
+
+.htpt_outer_bottom_name {
     font-family: 'Sombra';
     font-style: normal;
     font-weight: 700;
     color: #000000;
 }
-.htpt_outer_bottom_location{
+
+.htpt_outer_bottom_location {
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 400;
     font-size: small;
     color: #505050;
 }
+
+ .htpt_outer_mid {
+    margin-top: 1rem;
+    display: flex;
+    background: #e9ffff;
+    /* padding: 0vw 2vw 0vw 9vw; */
+    border: 0.2rem solid black;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.htpt_outer_mid img {
+    width: 4.5vw;
+    height: 4.5vw;
+    
+    margin-top: 0.8vw;
+} 
+
+@media screen and (max-width: 1200px){
+    .htpt_outer_mid img{
+        width:4.7vw;
+        height:4.7vw;
+    }
+}
+@media screen and (max-width: 920px){
+    .htpt_outer_mid img{
+        width:6.7vw;
+        height:6.7vw;
+    }
+    .htpt_outer_mid{
+        padding: 0vw 1vw 0vw 6vw;
+        /* margin-top: 2vw; */
+    }
+}
+
+@media screen and (max-width: 550px)
+{
+    .htpt_outer_mid img {
+         width: 10.7vw;
+         height: 10.7vw;
+    }
+}
+
+
+
+/* .htpt_outer_top{
+    content: '';
+    position: absolute;
+    border: 1rem solid;
+    border-color: #ffff transparent transparent;
+    bottom:-2rem;
+    left:50%;
+    transform: translateX(-50%);
+} */

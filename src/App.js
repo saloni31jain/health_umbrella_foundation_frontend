@@ -3,6 +3,8 @@ import {BrowserRouter,Routes,Route} from 'react-router-dom';
 import Home from './Components/Home/home';
 import Header from './Components/Header/header';
 import Umbrella from './Components/Home/home_first_page/home_first_page';
+import Footer from "./Components/Footer/footer";
+
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route path="/pathy" element={<Home/>}></Route>
         <Route path="/clinics-hospitals" element={<Home/>}></Route>
       </Routes>
+      
+      <Footer/>
     </div>
   );
 }

@@ -1,10 +1,10 @@
 import React from "react";
 import "./home.css";
+import HomeFifthPage from "./home_fifth_page/home_fifth_page";
 import HomeFirstPage from "./home_first_page/home_first_page";
 import HomeFourthPage from "./home_fourth_page/home_fourth_page";
 import HomeSecondPage from "./home_second_page/home_second_page";
 import HomeThirdPage from "./home_third_page/home_third_page";
-import Searchbar from "./searchbar/searchbar";
 
 function Home(){
     return(
@@ -13,6 +13,7 @@ function Home(){
             <HomeSecondPage className="homesecondpage"/>
             <HomeThirdPage className="homethirdpage"/>
             <HomeFourthPage className="homefourthpage"/>
+            <HomeFifthPage className="homefifthpage"/>
         </div>
     );
 }

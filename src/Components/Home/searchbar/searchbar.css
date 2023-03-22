@@ -45,3 +45,30 @@
         margin-bottom: 2rem;
     }
 }
+
+
+@media screen and (max-width: 500px){
+    .searchbar_outer_button {
+    border-radius: 0.2rem;
+    border-style: none;
+    background-color: #053B3F;
+    width: 92%;
+    height: 3rem;
+    font-family: 'Sombra';
+    text-align: center;
+    
+    font-weight: 700;
+    color: #ffff;
+    margin-bottom: 2rem;
+    }
+
+
+    .searchbar_outer_input {
+        border-radius: 0.2rem;
+        border-style: none;
+        height: 3rem;
+        padding: 1rem;
+        width: 92%;
+        margin: 1rem 0rem;
+    }
+}

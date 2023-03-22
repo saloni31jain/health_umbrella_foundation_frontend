@@ -8,6 +8,7 @@ function HomeThirdPage(){
             <div className="htp_outer_mid">
                 <div className="htp_outer_mid_top">
                     <h2 className="htp_outer_mid_top_heading">Testimonials</h2>
+                    {/* <img src="./Images/123.png" alt="" /> */}
                 </div>
                 <div className="htp_outer_mid_bottom">
                     <HTPTestimonial/>

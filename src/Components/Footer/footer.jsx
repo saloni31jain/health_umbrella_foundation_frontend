@@ -26,7 +26,7 @@ function Footer() {
                                 <a href="#">Home</a>
                                 <a href="#">About</a>
                                 <a href="#">Members</a>
-                                <a href="#"><span>Donation</span></a>
+                                <a href="#"><span>Donate Us</span></a>
                             </div>
                             <div className="quick-links_container-2">
                                 <a href="#">Newsletter</a>

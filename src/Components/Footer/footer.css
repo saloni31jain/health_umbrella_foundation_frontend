@@ -109,6 +109,26 @@
     /* border:1px solid white; */
 }
 
+.quick-links_container-1 span{
+    background-color: #D9DBE1;
+    color:black;
+    padding:0.4rem;
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+    position: relative;
+    top: 0.8rem;
+    font-weight: 700;
+    border-radius: 0.2rem;
+    
+}
+
+.quick-links_container-1 span:hover{
+    scale:1.1;
+    background-color: white;
+    color:black;
+
+}
+
 
 /*------------------------------------------------------------------------------------------------------------*/
 

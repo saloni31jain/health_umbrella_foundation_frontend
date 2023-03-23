@@ -13,7 +13,7 @@
     align-items: left;
     justify-content: center;
     text-align: left;
-    border: 0.2rem solid black;
+    /* border: 0.2rem solid black; */
     background-color: #ffff;
 }
 
@@ -62,7 +62,7 @@
     display: flex;
     background: #e9ffff;
     /* padding: 0vw 2vw 0vw 9vw; */
-    border: 0.2rem solid black;
+    /* border: 0.2rem solid black; */
     align-items: center;
     justify-content: center;
 

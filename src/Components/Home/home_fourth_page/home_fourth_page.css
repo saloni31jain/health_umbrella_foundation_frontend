@@ -15,7 +15,7 @@
     justify-content: center;
 }
 .hfourthp_outer_mid_top{
-    width: 60%;
+    width: 80vw;
     /* border: 0.2rem solid black; */
 }
 .hfourthp_outer_mid_top h3{
@@ -69,3 +69,23 @@
         width: 70vw;
     }
 }
+
+
+@media screen and (max-width: 820px){
+    /* .hfourthpv_outer img {
+        width: 15rem;
+      }
+      .hfourthpv_outer_text{
+        font-size: 0.9rem;
+      } */
+      .hfourthp_outer_mid_bottom2{
+        display: none;
+    }
+    
+}
+
+/* @media screen and (max-width: 820px){
+    .hfourthp_outer_mid_bottom1{
+        flex-direction: column;
+    }
+} */

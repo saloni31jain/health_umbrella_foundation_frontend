@@ -84,8 +84,8 @@
     
 }
 
-/* @media screen and (max-width: 820px){
+@media screen and (max-width: 729px){
     .hfourthp_outer_mid_bottom1{
         flex-direction: column;
     }
-} */
+}

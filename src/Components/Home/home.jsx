@@ -12,7 +12,7 @@ function Home(){
             <HomeFirstPage className="homefirstpage"/>
             <HomeSecondPage className="homesecondpage"/>
             {/* This was commented because it is work in progress */}
-            {/* <HomeThirdPage className="homethirdpage"/> */}
+            <HomeThirdPage className="homethirdpage"/>
             <HomeFourthPage className="homefourthpage"/>
             <HomeFifthPage className="homefifthpage"/>
         </div>

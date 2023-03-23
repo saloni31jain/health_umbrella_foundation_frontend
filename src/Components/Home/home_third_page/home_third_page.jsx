@@ -12,7 +12,7 @@ function HomeThirdPage(){
                 </div>
                 <div className="htp_outer_mid_bottom">
                     <HTPTestimonial/>
-                    {/* <HTPTestimonial/> */}
+                    <HTPTestimonial/>
                 </div>
             </div>
         </div>

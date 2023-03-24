@@ -24,6 +24,7 @@
 
 .hfourthpv_outer img {
   width: 27vw;
+  
 }
 
 
@@ -45,10 +46,15 @@
   }
 
   .hfourthpv_outer_text {
-    left: 3.1rem;
+    left: 2.1rem;
   }
 }
 
+@media screen and (max-width: 977px) {
+  .hfourthpv_outer_text {
+    left: 1.1rem;
+  }
+}
 
 /* @media screen and (max-width: 758px){
   .hfourthpv_outer img {
@@ -79,6 +85,10 @@
   .hfourthpv_outer_text {
     left: 1.1rem;
   }
+  .hfourthpv_outer_text{
+    font-size: 2vw;
+  }
+
 }
 
 /* @media screen and (max-width: 820px){

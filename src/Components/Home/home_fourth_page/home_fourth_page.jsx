@@ -67,7 +67,7 @@ function HomeFourthPage(){
             </div>
             <div className="hfourthp_outer_mid_bottom">
                 <Carousel responsive={responsive} 
-                autoPlaySpeed={2499} 
+                autoPlaySpeed={3000} 
                 infinite={true} 
                 autoPlay={true}
                 swipeable={true}

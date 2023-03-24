@@ -18,7 +18,7 @@ function HTPTestimonial() {
 
             
             <div className="htpt_outer_mid">
-                <img src="/Images/doc.png" alt="" />
+                {/* <img src="/Images/doc.png" alt="" /> */}
                 <div className="htpt_outer_bottom">
 
                     <span className="htpt_outer_bottom_name">

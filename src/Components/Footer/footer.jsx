@@ -40,9 +40,9 @@ function Footer() {
 
                     <div className="reach-us">
                         <h4>Reach Us</h4>
-                        <p><img src="./Images/location.png" alt="" /><span>hello@HealthUmbrella.com</span></p>
-                        <p><img src="./Images/Mobile.png" alt="" /><span>0522-2981000</span></p>
-                        <p><img src="./Images/Location.png" alt="" /><span>NGO Office</span></p>
+                        <p><i class="fa-solid fa-envelope"></i><span>hello@HealthUmbrella.com</span></p>
+                        <p><i class="fa-solid fa-phone"></i><span>0522-2981000</span></p>
+                        <p><i class="fa-solid fa-location-dot"></i><span>NGO Office</span></p>
 
                     </div>
                 </div>

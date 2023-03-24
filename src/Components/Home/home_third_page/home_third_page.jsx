@@ -9,13 +9,13 @@ import 'react-multi-carousel/lib/styles.css';
 export const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-      slidesToSlide:3,
+      items: 2,
+      slidesToSlide:2,
     },
     tablet: {
       breakpoint: { max: 1024, min: 700 },
-      items: 3,
-      slidesToSlide:3,
+      items: 2,
+      slidesToSlide:2,
     },
     mobile: {
       breakpoint: { max: 700, min: 0 },
@@ -27,22 +27,28 @@ export const responsive = {
 function HomeThirdPage() {
     return (
         <div className="htp_outer">
-            <div className="htp_outer_mid">
+            <div className="temp" >
                 <div className="htp_outer_mid_top">
                     <h2 className="htp_outer_mid_top_heading">Testimonials</h2>
                     <img src="./Images/123.png" alt="" />
                 </div>
-                <div className="htp_outer_mid_bottom">
-                    {/* <Carousel responsive={responsive}
-                        autoPlaySpeed={3000}
+                <div>
+                    <Carousel responsive={responsive}
+                        autoPlaySpeed={4000}
                         infinite={true}
                         autoPlay={true}
                         swipeable={true}
                         // showDots={true}
-                        removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}> */}
+                        removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}>
                             <HTPTestimonial />
                             <HTPTestimonial />
-                    {/* </Carousel>         */}
+                            <HTPTestimonial />
+                            <HTPTestimonial />
+                            <HTPTestimonial />
+                            <HTPTestimonial />
+                            <HTPTestimonial />
+                            <HTPTestimonial />
+                    </Carousel>        
                 </div>
             </div>
         </div>

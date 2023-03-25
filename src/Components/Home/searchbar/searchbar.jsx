@@ -5,7 +5,7 @@ import { useNavigate, NavLink } from 'react-router-dom';
 
 
 function SearchBar() {
-    const searchData = ["diabetes", "psoriasis", "cancer", "d", "di", "can", "migrane", "a", "aaaa"];
+    const searchData = ["diabetes", "psoriasis", "cancer", "Tuberculosis", "Chickenpox", "Anthrax", "migraine", "AIDS", "Hepatitis"];
 
     const [resultData, setResultData] = useState([]);
     const [searchInput, setSearchInput] = useState("");

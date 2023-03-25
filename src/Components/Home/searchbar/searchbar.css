@@ -23,6 +23,9 @@
     background-color: lightgrey;
 }
 
+.dataResult a{
+    text-decoration: none;
+}
 .dataResult::-webkit-scrollbar {
     display: none;
 }

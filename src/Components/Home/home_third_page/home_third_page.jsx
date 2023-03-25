@@ -38,7 +38,6 @@ function HomeThirdPage() {
                         infinite={true}
                         autoPlay={true}
                         swipeable={true}
-                        // showDots={true}
                         removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}>
                             <HTPTestimonial />
                             <HTPTestimonial />

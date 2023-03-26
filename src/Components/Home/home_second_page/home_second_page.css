@@ -31,6 +31,12 @@
 .hsp_outer_mid_left_image{
     width: 45vw;
 }
+
+.hsp_outer_mid_right_text_collapse{
+    display: none;
+}
+
+
 .hsp_outer_mid_right h1{
     font-family: 'Sombra';
     font-style: normal;

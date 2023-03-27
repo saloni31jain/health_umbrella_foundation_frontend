@@ -69,6 +69,7 @@ function HomeFourthPage(){
                 <Carousel responsive={responsive} 
                 autoPlaySpeed={4000} 
                 infinite={true} 
+                keyBoardControl={true}
                 autoPlay={true}
                 swipeable={true}
                 // showDots={true}

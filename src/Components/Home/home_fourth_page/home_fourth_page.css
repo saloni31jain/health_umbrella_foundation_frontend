@@ -143,4 +143,6 @@
 .hfourthp_outer_mid_bottom {
     /* border: 0.2rem solid black; */
     margin-bottom: 4vw;
+    padding-right: 5vw;
+    padding-left: 5vw;
 }

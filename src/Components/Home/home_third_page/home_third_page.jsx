@@ -1,18 +1,53 @@
 import React from "react";
 import "./home_third_page.css";
 import HTPTestimonial from "./htp_testimonial/htp_testimonial";
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
-function HomeThirdPage(){
-    return(
+
+
+export const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 2,
+      slidesToSlide:2,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 700 },
+      items: 2,
+      slidesToSlide:2,
+    },
+    mobile: {
+      breakpoint: { max: 700, min: 0 },
+      items: 1,
+      slidesToSlide:1,
+    }
+};
+
+function HomeThirdPage() {
+    return (
         <div className="htp_outer">
-            <div className="htp_outer_mid">
+            <div className="temp" >
                 <div className="htp_outer_mid_top">
                     <h2 className="htp_outer_mid_top_heading">Testimonials</h2>
                     <img src="./Images/123.png" alt="" />
                 </div>
-                <div className="htp_outer_mid_bottom">
-                    <HTPTestimonial/>
-                    {/* <HTPTestimonial/> */}
+                <div>
+                    <Carousel responsive={responsive}
+                        autoPlaySpeed={4000}
+                        infinite={true}
+                        autoPlay={true}
+                        swipeable={true}
+                        removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}>
+                            <HTPTestimonial />
+                            <HTPTestimonial />
+                            <HTPTestimonial />
+                            <HTPTestimonial />
+                            <HTPTestimonial />
+                            <HTPTestimonial />
+                            <HTPTestimonial />
+                            <HTPTestimonial />
+                    </Carousel>        
                 </div>
             </div>
         </div>

@@ -59,8 +59,10 @@
 }
 
 
-.reach-us img {
+.reach-us i {
     margin-right: 0.88rem;
+    font-size: 123%;
+    color:#56B6DC;
 }
 
 .reach-us p {
@@ -123,7 +125,7 @@
 }
 
 .quick-links_container-1 span:hover{
-    scale:1.1;
+    /* scale:1.1; */
     background-color: white;
     color:black;
 
@@ -155,14 +157,14 @@
     gap: 1.2rem;
 }
 
-.follow-us_links img {
-    width: 2rem;
-    height: 2rem;
+.follow-us_links i {
+    color: white;
+    font-size: 119%;
 }
 
 
-.follow-us_links img:hover{
-    scale: 1.3;
+.follow-us_links i:hover{
+    scale: 1.2;
 }
 
 

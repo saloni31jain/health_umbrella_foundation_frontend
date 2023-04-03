@@ -19,7 +19,6 @@ function App() {
         <Route path="/pathy" element={<Home/>}></Route>
         <Route path="/clinics-hospitals" element={<Home/>}></Route>
       </Routes>
-      
       <Footer/>
     </div>
   );

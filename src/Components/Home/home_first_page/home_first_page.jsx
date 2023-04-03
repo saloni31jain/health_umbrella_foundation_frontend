@@ -4,7 +4,8 @@ import "./home_first_page.css";
 
 function HomeFirstPage(){
     return(
-        <div className="hfp_outer">        
+        <div className="hfp_outer"> 
+
             <div className="hfp_outer_left">
                 <h1 className="hfp_outer_left_heading">
                     Are You Confused about your line of treatment?
@@ -16,11 +17,16 @@ function HomeFirstPage(){
                     With Some Valuable Testimonial Shared By Common People Of Different Treatments. 
                     Find Out Which Therapy Out Of Many May Suit You Best !
                 </span>
-                <SearchBar className="hfp_outer_left_searchbar"/>
+                <div className="hfp_outer_left_searchbar"><SearchBar/></div>
+                
             </div>
+
+
             <div className="hfp_outer_right">
                 <img src="./Images/UmbrellaOverview.png" alt="" className="hfp_outer_right_image"/>
             </div>
+
+
         </div>
     );
 }

@@ -15,54 +15,31 @@ export const responsive = {
       items: 3,
       slidesToSlide:3,
     },
+    stablet: {
+        breakpoint: { max: 700, min: 500 },
+        items: 2,
+        slidesToSlide:2,
+      },
     mobile: {
-      breakpoint: { max: 700, min: 0 },
+      breakpoint: { max: 500, min: 0 },
       items: 1,
       slidesToSlide:1,
     }
 };
 
-function HomeFourthPage(){
+function HomeFourthPage(props){
+
+    let pagetext=props.fourthpagedata;
+
     return(
-        // <div className="hfourthp_outer">
-        //     <div className="hfourthp_outer_mid">
-        //         <div className="hfourthp_outer_mid_top">
-        //             <h3 className="hfourthp_outer_mid_top_heading">
-        //                 Under Health Umbrella Foundation Initiative
-        //             </h3> 
-        //             <span className="hfourthp_outer_mid_top_text">Discover effective treatments through 
-        //                 our curated video collection. From inspiring 
-        //                 stories to trusted advice, gain valuable insights 
-        //                 into the journey towards optimal health and wellness. 
-        //                 Transform your life and take the first step towards 
-        //                 a happier, healthier you.
-        //             </span>
-        //         </div>
-        //         <div className="hfourthp_outer_mid_bottom">
-        //             <div className="hfourthp_outer_mid_bottom1">
-        //                 <HFPVideos/>
-        //                 <HFPVideos/>
-        //                 <HFPVideos/>
-        //             </div>
-        //             <div className="hfourthp_outer_mid_bottom2">
-        //                 <HFPVideos/>
-        //                 <HFPVideos/>
-        //                 <HFPVideos/>
-        //             </div>
-        //         </div>
-        //     </div>
-        // </div>
+
         <div className="hfourthp_outer_mid">
             <div className="hfourthp_outer_mid_top">
                 <h3 className="hfourthp_outer_mid_top_heading">
                     Under Health Umbrella Foundation Initiative
                 </h3> 
-                <span className="hfourthp_outer_mid_top_text">Discover effective treatments through 
-                    our curated video collection. From inspiring 
-                    stories to trusted advice, gain valuable insights 
-                    into the journey towards optimal health and wellness. 
-                    Transform your life and take the first step towards 
-                    a happier, healthier you.
+                <span className="hfourthp_outer_mid_top_text">
+                    {pagetext.text}
                 </span>
             </div>
             <div className="hfourthp_outer_mid_bottom">
@@ -73,13 +50,9 @@ function HomeFourthPage(){
                 autoPlay={true}
                 swipeable={true}
                 // showDots={true}
-                removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}>
-                    <HFPVideos/>
-                    <HFPVideos/>
-                    <HFPVideos/>
-                    <HFPVideos/>
-                    <HFPVideos/>
-                    <HFPVideos/>
+                removeArrowOnDeviceType={["tablet","stablet", "mobile", "desktop"]}>
+                    {pagetext.videoList.map((videos)=>
+                     <HFPVideos  key={videos.heading} videosdata={videos} /> )}
                 </Carousel>
             </div>
         </div>

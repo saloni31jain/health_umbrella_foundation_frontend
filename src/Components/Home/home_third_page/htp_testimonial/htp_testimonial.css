@@ -1,20 +1,16 @@
 .htpt_outer {
     margin: 1rem;
-    /* border: 0.2rem solid black; */
     border-radius: 0.2rem;
-    /* width:32vw; */
-
 }
 
 .htpt_outer_top {
+    /* min-height: 30vh; */
     box-shadow: 10px 10px 10px#bebebe75;
     padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: left;
-    justify-content: center;
     text-align: left;
-    /* border: 0.2rem solid black; */
     background-color: #ffff;
 }
 
@@ -62,8 +58,6 @@
     margin-top: 1rem;
     display: flex;
     background: #e9ffff;
-    /* padding: 0vw 2vw 0vw 9vw; */
-    /* border: 0.2rem solid black; */
     align-items: center;
     justify-content: center;
 
@@ -72,7 +66,6 @@
 .htpt_outer_mid img {
     width: 4.5vw;
     height: 4.5vw;
-
     margin-top: 0.8vw;
 }
 
@@ -91,7 +84,6 @@
 
     .htpt_outer_mid {
         padding: 0vw 4vw 0vw 4vw;
-        /* margin-top: 2vw; */
     }
 }
 
@@ -108,14 +100,3 @@
         margin-top: 2vw;
     }
 }
-
-
-/* .htpt_outer_top{
-    content: '';
-    position: absolute;
-    border: 1rem solid;
-    border-color: #ffff transparent transparent;
-    bottom:-2rem;
-    left:50%;
-    transform: translateX(-50%);
-} */

@@ -1,31 +1,29 @@
 import React from "react";
 import "./htp_testimonial.css";
 
-function HTPTestimonial() {
+function HTPTestimonial(props) {
+
+    let testimonialtextdata=props.testimonialtext;
+
     return (
         <div className="htpt_outer">
             <div className="htpt_outer_top">
-
-
-                <h4 className="htpt_outer_top_heading">My experience with Migraine</h4>
-                <span className="htpt_outer_top_text">I have been suffering from
-                    migraine from 2 years. The treatment on the website helped me to cure it.
-                    I have been suffering from migraine from 2 years. The treatment on the website helped me
-                    to cure it.I have been suffering from migraine from 2 years. The treatment
-                    on the website helped me to cure it.</span>
-
+                <h4 className="htpt_outer_top_heading">
+                    {testimonialtextdata.heading}
+                </h4>
+                <span className="htpt_outer_top_text">
+                    {testimonialtextdata.text.slice(0,300)}...  
+                </span>
             </div>
 
             
             <div className="htpt_outer_mid">
-                {/* <img src="/Images/doc.png" alt="" /> */}
                 <div className="htpt_outer_bottom">
-
                     <span className="htpt_outer_bottom_name">
-                        Sophia Nguyen
+                        {testimonialtextdata.name}
                     </span>
                     <span className="htpt_outer_bottom_location">
-                        Rajasthan, India
+                        {testimonialtextdata.location}
                     </span>
                 </div>
             </div>

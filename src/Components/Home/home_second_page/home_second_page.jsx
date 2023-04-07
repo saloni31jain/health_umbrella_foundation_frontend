@@ -17,7 +17,7 @@ function HomeSecondPage(props) {
             <div className="hsp_outer_mid">
                 {/* remove this down div for breakage */}
                 <div className="hsp_outer_mid_left">
-                      <iframe className="hsp_outer_mid_left_video" src={ourmissionyoutubelink} title="How To Embed YouTube Videos in React / Gatsby (and make them Responsive)" allowFullScreen></iframe>
+                      <iframe className="hsp_outer_mid_left_video" src={ourmissionyoutubelink} title="youtubevideo" allowFullScreen></iframe>
                 </div>
                 <div className="hsp_outer_mid_right">
                     <h1 className="hsp_outer_mid_right_heading">Our Mission</h1>

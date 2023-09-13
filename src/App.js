@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./Components/Home/home";
 import Header from "./Components/Header/header";
 import Footer from "./Components/Footer/footer";
-
+import Ejournal from "./Components/ejournal/ejournal";
 function App() {
   
   return (
@@ -17,6 +17,7 @@ function App() {
         <Route path="/ask-suggestion" element={<Home />}></Route>
         <Route path="/pathy" element={<Home />}></Route>
         <Route path="/clinics-hospitals" element={<Home />}></Route>
+        <Route path="/ejournal" element={<Ejournal />}></Route>
       </Routes>
       <Footer />
     </div>

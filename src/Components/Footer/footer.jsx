@@ -51,7 +51,7 @@ function Footer() {
                                 <Link to="#"><span>Donate</span></Link>
                             </div>
                             <div className="quick-links_container-2">
-                                <Link to="#">Newsletter</Link>
+                                <Link to="/ejournal">Newsletter</Link>
                                 <Link to="#">Feedback</Link>
                                 <Link to="#">Join Us</Link>
                             </div>

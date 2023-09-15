@@ -16,7 +16,7 @@
     height: 491px;
     object-fit: contain;
     background-size: 100% 100%;
-    background-image: url('D:\health umbrella frontend\health_umbrella_foundation_frontend\public\Images\migrane.jpg');
+    /* background-image: url('D:\health umbrella frontend\health_umbrella_foundation_frontend\public\Images\migrane.jpg'); */
 }
 
 .disease_outer_left_flex {

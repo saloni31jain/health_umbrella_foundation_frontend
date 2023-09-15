@@ -73,7 +73,7 @@
 }
 
 .cowImage {
-    background: url('D:\health umbrella frontend\health_umbrella_foundation_frontend\public\Images\cow.png');
+    /* background: url('D:\health umbrella frontend\health_umbrella_foundation_frontend\public\Images\cow.png'); */
     width: 101px;
     height: 141px;
     display: inline-block;
@@ -90,7 +90,7 @@
     bottom: 177px; */
 }
 .newcowImage {
-    background: url('D:\health umbrella frontend\health_umbrella_foundation_frontend\public\Images\cow.png');
+    /* background: url('D:\health umbrella frontend\health_umbrella_foundation_frontend\public\Images\cow.png'); */
     position: relative;
     left: 72px;
     width: 101px;

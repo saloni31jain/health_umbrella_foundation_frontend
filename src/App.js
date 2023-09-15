@@ -3,7 +3,8 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./Components/Home/home";
 import Header from "./Components/Header/header";
 import Footer from "./Components/Footer/footer";
-import Ejournal from "./Components/ejournal/ejournal";import Books from "./Components/BooksPage/books";
+import Ejournal from "./Components/ejournal/ejournal";
+import Books from "./Components/BooksPage/books";
 
 function App() {
   
@@ -19,6 +20,7 @@ function App() {
         <Route path="/pathy" exact element={<Home />}></Route>
         <Route path="/clinics-hospitals" exact element={<Home />}></Route> 
         <Route path="/books" exact element={<Books />}></Route> 
+        <Route path="/ejournal" exact element={<Ejournal />}></Route> 
       </Routes>
       <Footer />
     </div>

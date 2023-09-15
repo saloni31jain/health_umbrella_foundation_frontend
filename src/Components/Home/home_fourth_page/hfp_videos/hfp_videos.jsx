@@ -1,12 +1,12 @@
 import React from "react";
 import "./hfp_videos.css";
 
-function HFPVideos(){
+function HFPVideos(props){
     return(
         <div className="hfourthpv_outer">
-            <img src="./Images/Rectangle-5.png" alt="" className="hfourthpv_outer_image"/>
+            <img src={props.videosdata.imageLink} alt="" className="hfourthpv_outer_image"/>
             <div className="hfourthpv_outer_text">
-                Learn More About Migraine <br/> <span><a href="https://www.youtube.com/" target="_blank">Watch now &#8599;</a></span>
+                {props.videosdata.heading} <br/> <span><a href={props.videosdata.ytPlaylistLink} target="_blank" rel="noreferrer">Watch now <i className="bi-link-45deg"></i></a></span>
             </div>
         </div>
     );

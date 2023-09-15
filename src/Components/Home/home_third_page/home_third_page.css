@@ -1,7 +1,5 @@
 .htp_outer {
-    /* border: 0.2rem solid black; */
     background-color: #E9FFFF;
-    /* position: relative; */
 }
 
 .htp_outer_mid {
@@ -16,7 +14,6 @@
 
 .htp_outer_mid_top {
     margin-top: 2rem;
-    /* position: relative; */
 }
 
 .htp_outer_mid_top h2 {
@@ -30,7 +27,6 @@
     width: 82vw;
     margin-top: 1rem;
     display: flex;
-    /* flex-wrap: wrap; */
     flex-direction: row;
     align-items: center;
     justify-items: center;
@@ -38,17 +34,11 @@
     z-index: 2;
 }
 
-
-
-
 .htp_outer_mid_top img {
     position: absolute;
-    /* left: 66rem; */
     top: 4rem;
     right: 5vw;
-    /* background: #053B3F; */
     opacity: 0.4;
-    
     width: 9vw;
 }
 
@@ -66,7 +56,6 @@
         width: 70vw;
         margin-top: 2rem;
         display: flex;
-        /* flex-wrap: wrap; */
         flex-direction: column;
         align-items: center;
         justify-items: center;
@@ -82,12 +71,9 @@
 @media screen and (max-width: 1002px) {
     .htp_outer_mid_top img {
         position: absolute;
-        /* left: 66rem; */
         top: 3rem;
         right: 5vw;
-        /* background: #053B3F; */
         opacity: 0.4;
-        /* transform: rotate(180deg); */
         width: 9vw;
     }
 
@@ -96,8 +82,6 @@
     }
 
 }
-
-
 
 .temp {
 

@@ -24,7 +24,10 @@ export const responsive = {
     }
 };
 
-function HomeThirdPage() {
+function HomeThirdPage(props) {
+
+    const testimonialdata=props.thirdpagedata;
+
     return (
         <div className="htp_outer">
             <div className="temp" >
@@ -39,14 +42,8 @@ function HomeThirdPage() {
                         autoPlay={true}
                         swipeable={true}
                         removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}>
-                            <HTPTestimonial />
-                            <HTPTestimonial />
-                            <HTPTestimonial />
-                            <HTPTestimonial />
-                            <HTPTestimonial />
-                            <HTPTestimonial />
-                            <HTPTestimonial />
-                            <HTPTestimonial />
+                            {testimonialdata.testimonialList.map((innerdata)=>
+                            <HTPTestimonial key={innerdata.heading}  testimonialtext={innerdata} /> )}
                     </Carousel>        
                 </div>
             </div>

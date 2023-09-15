@@ -30,7 +30,7 @@ const Disease_first_page = () => {
   return (
     <div className="hfp_outer">
       <div className="disease_outer_right">
-        <img alt="" />
+        <img alt="migraine image" />
       </div>
 
       <div className="disease_outer_left_flex">

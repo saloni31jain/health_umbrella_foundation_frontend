@@ -25,7 +25,7 @@
     width: 87px;
     height: 87px;
     flex-shrink: 0;
-    background: url("D:\health umbrella frontend\health_umbrella_foundation_frontend\public\Images\18 2.png"), lightgray 50% / cover no-repeat;
+    /* background: url("D:\health umbrella frontend\health_umbrella_foundation_frontend\public\Images\18 2.png"), lightgray 50% / cover no-repeat; */
 }
 
 .article_heading{

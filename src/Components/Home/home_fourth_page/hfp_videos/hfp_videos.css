@@ -1,20 +1,33 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
 .hfourthpv_outer {
-  margin: 1rem;
+  margin: 0rem 0.5rem;
   position: relative;
   text-align: center;
   color: white;
-  
+  /* border: 0.2rem solid green; */
+}
+
+.hfourthpv_outer:after{
+  display: block;
+  position: relative;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #131212 100%);
+  margin-top: -150px;
+  height: 150px;
+  width: 100%;
+  content: '';
 }
 
 .hfourthpv_outer_text {
+  z-index: 5;
   text-align: left;
   position: absolute;
   bottom: 1rem;
-  left: 10%;
+  left: 1rem;
   font-family: 'Sombra';
   font-style: normal;
   font-weight: 700;
-  font-size: 107%;
+  font-size: large;
   color: #ffff;
 }
 
@@ -24,44 +37,41 @@
 }
 
 .hfourthpv_outer img {
-  width: 26vw;
-  
+  /* border: 0.2rem solid red; */
+  width: 100%;
 }
 
+@media screen and (max-width: 1010px) {
+  .hfourthpv_outer_text {
+    left: 1rem;
+    font-size: medium;
+  }
+}
 
-
-
-
-
-
-
+@media screen and (max-width: 850px) {
+  .hfourthpv_outer_text {
+    left: 1rem;
+    font-size: small;
+  }
+}
 
 @media screen and (max-width: 700px) {
   .hfourthpv_outer_text {
-    left: 23%;
+    left: 1rem;
+    font-size: small;
   }
   .hfourthpv_outer img {
-    width: 55vw;
+    width: 100%;
   }
 }
 
-
-
-/* @media screen and (max-width: 560px) {
-  .hfourthpv_outer_text {
-    left: 8.1rem;
-  }
-} */
-
 @media screen and (max-width: 460px) {
   .hfourthpv_outer_text {
-    left: 16%;
+    left: 1rem;
+    font-size: large;
   }
   .hfourthpv_outer img {
-    width: 71vw;
+    width: 100%;
   }
-  /* .hfourthpv_outer_text {
-    font-size: 4.1vw;
-  } */
 }
 

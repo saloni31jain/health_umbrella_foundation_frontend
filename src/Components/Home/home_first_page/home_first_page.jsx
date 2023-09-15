@@ -2,7 +2,8 @@ import React from "react";
 import SearchBar from "../searchbar/searchbar";
 import "./home_first_page.css";
 
-function HomeFirstPage(){
+function HomeFirstPage(props){
+
     return(
         <div className="hfp_outer"> 
 
@@ -17,7 +18,7 @@ function HomeFirstPage(){
                     With Some Valuable Testimonial Shared By Common People Of Different Treatments. 
                     Find Out Which Therapy Out Of Many May Suit You Best !
                 </span>
-                <div className="hfp_outer_left_searchbar"><SearchBar/></div>
+                <div className="hfp_outer_left_searchbar"><SearchBar diseaselist={props.searchpagedata.diseaseList} /></div>
                 
             </div>
 

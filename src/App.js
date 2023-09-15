@@ -14,8 +14,9 @@ function App() {
     <div className="App">
       <Header />
       <Routes>
-        <Route path="/" exact element={<Home />}></Route>
+        <Route path="/" exact element={<Home />}></Route> 
         <Route path="/about-us" exact element={<Home />}></Route>
+        {/* Need to create child pages routes for diseases */}
         <Route path="/diseases" exact element={<Disease />}></Route>
         <Route path="/share-experience" exact element={<Articles />}></Route>
         <Route path="/ask-suggestion" exact element={<Home />}></Route>

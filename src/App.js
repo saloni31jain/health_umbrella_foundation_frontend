@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./Components/Home/home";
 import Header from "./Components/Header/header";
 import Footer from "./Components/Footer/footer";
+import Books from "./Components/BooksPage/books";
 
 function App() {
   
@@ -10,13 +11,14 @@ function App() {
     <div className="App">
       <Header />
       <Routes>
-        <Route path="" element={<Home />}></Route>
-        <Route path="/about-us" element={<Home />}></Route>
-        <Route path="/diseases" element={<Home />}></Route>
-        <Route path="/share-experience" element={<Home />}></Route>
-        <Route path="/ask-suggestion" element={<Home />}></Route>
-        <Route path="/pathy" element={<Home />}></Route>
-        <Route path="/clinics-hospitals" element={<Home />}></Route>
+        <Route path="/" exact element={<Home />}></Route>
+        <Route path="/about-us" exact element={<Home />}></Route>
+        <Route path="/diseases" exact element={<Home />}></Route>
+        <Route path="/share-experience" exact element={<Home />}></Route>
+        <Route path="/ask-suggestion" exact element={<Home />}></Route>
+        <Route path="/pathy" exact element={<Home />}></Route>
+        <Route path="/clinics-hospitals" exact element={<Home />}></Route> 
+        <Route path="/books" exact element={<Books />}></Route> 
       </Routes>
       <Footer />
     </div>

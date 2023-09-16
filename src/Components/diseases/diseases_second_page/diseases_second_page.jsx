@@ -1,15 +1,17 @@
 import React, { useEffect, useState } from "react";
 import "./diseases_second_page.scss";
-// import img2 from "../assets/cow.png";
+// import img2 from "/Images/cow.png";
 import axios from "axios";
 import ClipLoader from "react-spinners/ClipLoader";
 import Top from "../diseases_first_page/diseases_first_page";
 
+const gradientarry=['linear-gradient(rgb(224, 165, 224),white)','linear-gradient(rgb(142, 241, 175),white)','linear-gradient(skyblue,white)','linear-gradient(rgb(244, 244, 159),white)','linear-gradient(rgb(242, 204, 132),white)','linear-gradient(rgb(239, 241, 178),white)','linear-gradient(rgb(249, 175, 239),white)']
 const Bottom = () => {
-      
+  
   const [selectedTherapy, setSelectedTherapy] = useState("therapiesWithDrugs");
   const [data, setData] = useState({});
   const [loading, setLoading] = useState(true);
+ 
 
   useEffect(() => {
     const getapidata = async () => {
@@ -84,16 +86,16 @@ const Bottom = () => {
                 <div className="disease-cards">
                   {therapyArray &&
                     therapyArray.map((therapy, index) => (
-                      <div key={index} className="disease-card">
+                      <div key={index} className="disease-card" style={{backgroundImage:gradientarry[index%gradientarry.length]}}>
                        <div className="disease-card-img">
                        <img src={therapy.imageLink} alt="" />
-                       {/* <img src={img2} alt="" /> */}
+                       {/* <img src="/Images/cow.png" alt="" /> */}
                        </div>
                         <h4>{therapy.name}</h4>
                         <p>
                           {therapy.isReadMore
                             ? therapy.summary
-                            : therapy.summary.slice(0, 70)}
+                            : therapy.summary.slice(0, 72)}
                           <a
                             onClick={() => {
                               toggleReadMore(index);
@@ -101,7 +103,7 @@ const Bottom = () => {
                             style={{ color: "blue", cursor: "pointer" }}
                           >
                             <br />
-                            {!therapy.isReadMore ? "...Read More" : "Read Less..."}
+                            {!therapy.isReadMore ? "Read More..." : "...Read Less"}
                           </a>
                         </p>
                       </div>

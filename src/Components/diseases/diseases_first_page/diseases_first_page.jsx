@@ -24,10 +24,7 @@ const Top = ({data}) => {
           </div>
           <div className="disease-right">
             <h1 style={{textTransform:"capitalize"}}>{data.disease}</h1>
-            <p>
-           {data.text}
-           {/* {TEXT} */}
-            </p>
+            <p>{data.text}</p>
             <h2>Summary</h2>
             <p>
               {isReadMore ? `${data.summary}` : `${data.summary}`.slice(0, 400)}

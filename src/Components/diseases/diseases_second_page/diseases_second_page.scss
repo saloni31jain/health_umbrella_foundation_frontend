@@ -1,15 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-
-
-
 
 .diseases-bottom-container{
     width: 85.27vw;
@@ -65,9 +60,9 @@
 
 
     .disease-card{
-       
+        box-shadow: 0px 0px 10px 1px grey;
         width: 257px;
-        height: 252px;
+        min-height: 272px;
         background-image: linear-gradient(violet,white);
         // background-color: grey;
         padding: 5px 10px;
@@ -107,13 +102,25 @@
             font-size: 12px;
              margin-top:5px;
              margin-left: 10px;
-            min-height: 50px;
+            min-height: 90px;
             max-height: 70px;
-            overflow:scroll;
-            scrollbar-width: none;
+            overflow-x: hidden;
             text-align: left;
         }
-        
+        p::-webkit-scrollbar{
+            width: 0.5rem;
+        }
+        p::-webkit-scrollbar-track{
+            background: #999999;
+            border-radius: 0.5rem;
+        }
+        p::-webkit-scrollbar-thumb{
+            background: #053B3F;
+            border-radius: 0.5rem;
+        }
+        p::-webkit-scrollbar-button{
+            height: 100%;
+        }
 
     }
 

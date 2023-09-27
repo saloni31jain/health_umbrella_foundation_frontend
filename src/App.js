@@ -8,6 +8,7 @@ import Articles from './Components/Articles/articles';
 import Ejournal from "./Components/ejournal/ejournal";
 import Books from "./Components/BooksPage/books";
 import Diseases from "./Components/diseases/diseases";
+import DirectCases from "./Components/DirectCases/directcases"
 
 function App() {
   
@@ -25,6 +26,7 @@ function App() {
         <Route path="/clinics-hospitals" exact element={<Home />}></Route> 
         <Route path="/books" exact element={<Books />}></Route> 
         <Route path="/ejournal" exact element={<Ejournal />}></Route> 
+        <Route path="/directcases" exact element={<DirectCases />}></Route> 
       </Routes>
       <Footer />
     </div>

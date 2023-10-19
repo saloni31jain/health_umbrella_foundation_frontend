@@ -8,6 +8,8 @@ import Articles from './Components/Articles/articles';
 import Ejournal from "./Components/ejournal/ejournal";
 import Books from "./Components/BooksPage/books";
 import Diseases from "./Components/diseases/diseases";
+import Suggestion from "./Components/Suggestion/suggestion"
+
 
 function App() {
   
@@ -20,7 +22,7 @@ function App() {
         {/* Need to create child pages routes for diseases */}
         <Route path="/diseases" exact element={<Diseases/>}></Route>
         <Route path="/share-experience" exact element={<Articles />}></Route>
-        <Route path="/ask-suggestion" exact element={<Home />}></Route>
+        <Route path="/ask-suggestion" exact element={<Suggestion />}></Route>
         <Route path="/pathy" exact element={<Home />}></Route>
         <Route path="/clinics-hospitals" exact element={<Home />}></Route> 
         <Route path="/books" exact element={<Books />}></Route> 

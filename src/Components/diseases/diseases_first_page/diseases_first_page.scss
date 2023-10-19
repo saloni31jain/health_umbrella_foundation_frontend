@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 
 .extraspace{
     height: 90px;
@@ -18,7 +16,7 @@
 .diseases-top-container{
     position: relative;
     width: 96.2vw;
-    height: 63.8vh;
+    height: 520px;
     // overflow: scroll;
     display: flex;
     flex-direction: row;
@@ -31,18 +29,13 @@
     font-family: 'Noto Sans', sans-serif;
 
     .disease-left{
-        width: 444px;
-        // width: auto;
-        height: 493px;
-        // height: auto;
-        margin: auto;
-        margin-bottom: 0;
         display: flex;
         align-items: center;
-        justify-content: center;
+        margin-left:50px ;
         img{
-            height: 100%;
-            width: 100%;
+            height: 444px;
+            width: auto;
+            max-width: 493px;
         }
     }
     .disease-right{
@@ -50,28 +43,40 @@
         margin: auto 60px;
 
         p{
-            overflow: scroll;
+            overflow-x: hidden;
+            // overflow: scroll;
             max-height: 150px;
-            max-width: 720px;
+            max-width: 750px;
             font-size: 16px;
-            margin-bottom: 20px;
+            // margin-bottom: 20px;
             // margin: 20px auto;
+        }
+        p::-webkit-scrollbar{
+            width: 0.5rem;
+        }
+        p::-webkit-scrollbar-track{
+            background: #999999;
+            border-radius: 0.5rem;
+        }
+        p::-webkit-scrollbar-thumb{
+            background: #053B3F;
+            border-radius: 0.5rem;
+        }
+        p::-webkit-scrollbar-button{
+            height: 50%;
         }
         h1{
             font-weight: bold;
-            margin: 20px auto;
+            margin-top: 20px;
+            // margin: 20px auto;
         }
         h2{
             font-weight:500;
-            margin: 15px auto;
+            margin-top: 15px;
+            // margin: 15px auto;
         }
-
-
-
     }
 }
-
-
 
 
 .diseases-top-end{
@@ -106,7 +111,7 @@
 
 
 
-@media screen and (max-width: 850px){
+@media screen and (max-width: 915px){
    .diseases-top-container{
     .disease-left{
         display: none;

@@ -2,24 +2,23 @@ import React from "react";
 import "./home_fifth_page.css";
 import SearchBar from "../searchbar/searchbar";
 
-function HomeFifthPage() {
+function HomeFifthPage(props) {
     return (
 
         <div className="hfifthp">
             <div className="hfifthp_upper">
                 <h3>Health Information for All, Everywhere</h3>
-                <p>Health Umbrella Foundation is a movement to collect and summarize the testimonials of common people regarding various treatments and therapies. The organization aims to systematically arrange and verify feedback from different sources, including direct interviews,websites, magazines, and newspapers. This data can provide valuable insights to doctors and healthcare professionals regarding the effectiveness of treatments in real world scenarios</p>
-                <div className="search">
-                    <SearchBar />
+                <p>
+                    {props.fifthpagedata.text}
+                </p>
+                <div className="hfifthp_search">
+                    <SearchBar diseaselist={props.searchpagedata.diseaseList} />
                 </div>
             </div>
             
             <div className="hfifthp_lower">
                 <img src="./Images/g69.png" alt="" />
             </div>
-
-
-
         </div>
     )
 }

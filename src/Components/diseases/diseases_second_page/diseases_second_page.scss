@@ -7,11 +7,13 @@
 }
 
 .diseases-bottom-container{
-    width: 85.27vw;
+    //  width: 85.27vw;
+    width: 95vw;
     height: auto;
     // background: rgb(244, 244, 246);
     margin: auto;
     margin-bottom: 30px;
+    
     // background-image: linear-gradient(rgb(249, 175, 239),white);
 }
 .disease-bottom-buttons{
@@ -26,6 +28,7 @@
             background-color:#053B3F;
             outline: none;
             text-decoration: none;
+            
     }
     
     
@@ -34,8 +37,11 @@
         height: 85px;
         background-color: #E9FFFF;
         color: #053B3F;
-        font-size: 20px;
+        font-size: 22px;
         font-weight: bold;
+        text-transform: capitalize;
+        border-radius:10px;
+        // white-space:nowrap;
         // &:hover{
         //     color: white;
         //     background-color:#053B3F;
@@ -60,15 +66,17 @@
 
 
     .disease-card{
-        box-shadow: 0px 0px 10px 1px grey;
+        box-shadow: 0px 0px 5px 1px rgb(195, 194, 194);
         width: 257px;
         min-height: 272px;
-        background-image: linear-gradient(violet,white);
+        border-bottom: #dedddd 3px solid;
+        // background-image: linear-gradient(violet,white);
         // background-color: grey;
         padding: 5px 10px;
         transition: .3s;
         border-radius: 12px;
         margin-top: 30px;
+        margin-bottom: 30px;
         margin-left: 20px;
         margin-right: 20px;
         // margin-bottom: 10px;
@@ -89,17 +97,20 @@
             width: 141px;
             height: 101px;
             margin-top: 25px;
+            border-radius: 10px;
+            box-shadow: none;
 
         }
        }
 
        h4{
-        font-size: 20px;
+        font-size: 24px;
         margin-top: 5px;
+        text-transform: capitalize;
         
     }
         p{
-            font-size: 12px;
+            font-size: 15px;
              margin-top:5px;
              margin-left: 10px;
             min-height: 90px;
@@ -109,9 +120,12 @@
         }
         p::-webkit-scrollbar{
             width: 0.5rem;
+            // width:0;
         }
         p::-webkit-scrollbar-track{
-            background: #999999;
+            background: #dedddd;
+            // background: #999999;
+            // background: #8ef0d976;
             border-radius: 0.5rem;
         }
         p::-webkit-scrollbar-thumb{
@@ -129,10 +143,15 @@
 
 
 @media screen and (max-width: 1000px){
+    
     .disease-bottom-buttons{
-        flex-direction: column;
-        margin: 0;
-        align-items: center;
+        // flex-direction: column;
+        // margin: 0;
+        // align-items: center;
+        button{
+            // border-radius: 20px;
+            font-size: 20px;
+        }
     }
     .disease-cards{
         // margin: auto;
@@ -143,8 +162,18 @@
     }
  }
  
- @media screen and (max-width: 570px){
+ @media screen and (max-width: 850px){
     //
+    .disease-bottom-buttons{
+       flex-direction: column;
+        margin: 0;
+        align-items: center; 
+        
+        button{
+            border-radius: 20px;
+            font-size: 20px;
+        }
+    }
  }
 
  

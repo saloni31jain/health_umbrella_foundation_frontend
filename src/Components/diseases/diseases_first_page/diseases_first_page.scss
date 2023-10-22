@@ -21,7 +21,7 @@
     display: flex;
     flex-direction: row;
     // background: #b9b9b9;
-    background: #ececec;
+    // background: #ececec;
     
     margin: auto;
     margin-top: 15px;
@@ -31,31 +31,37 @@
     .disease-left{
         display: flex;
         align-items: center;
-        margin-left:50px ;
+        //margin-left:50px ;
+        margin: auto;
         img{
             height: 444px;
             width: auto;
+            margin-right: 20px;
             max-width: 493px;
         }
     }
     .disease-right{
         text-align: left;
-        margin: auto 60px;
+        margin: auto ;
 
         p{
             overflow-x: hidden;
             // overflow: scroll;
             max-height: 150px;
             max-width: 750px;
-            font-size: 16px;
+            margin-right: 20px;
+            margin-left: 20px;
+            font-size: 20px;
             // margin-bottom: 20px;
             // margin: 20px auto;
         }
         p::-webkit-scrollbar{
             width: 0.5rem;
+            // width:0;
         }
         p::-webkit-scrollbar-track{
-            background: #999999;
+            // background: #999999;
+            background: #edebeb;
             border-radius: 0.5rem;
         }
         p::-webkit-scrollbar-thumb{
@@ -67,12 +73,18 @@
         }
         h1{
             font-weight: bold;
-            margin-top: 20px;
+            font-size: 60px;
+            // margin-top: 10px;
+            margin-right: 20px;
+            margin-left: 20px;
             // margin: 20px auto;
         }
         h2{
             font-weight:500;
-            margin-top: 15px;
+            font-size: 40px;
+            // margin-top: 15px;
+            margin-right: 20px;
+            margin-left: 20px;
             // margin: 15px auto;
         }
     }

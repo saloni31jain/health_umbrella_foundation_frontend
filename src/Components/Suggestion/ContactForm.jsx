@@ -73,6 +73,7 @@ const ContactForm = () => {
         position: toast.POSITION.TOP_RIGHT
       });
       console.log("Response from backend:", response.data);
+
     } catch (error) {
       toast.error("Error !", {
         position: toast.POSITION.TOP_RIGHT
@@ -92,15 +93,15 @@ const ContactForm = () => {
             <input type="text" id="gender" name="gender" value={formData.gender} onChange={handleChange} placeholder="Gender*" required /> <br /> <br />
           </div>
           <div className="form secondrow">
-            <label htmlFor="email"></label>
-            <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} placeholder="Email*" required /> <br /> <br />
+            <label htmlFor="email_address"></label>
+            <input type="email" id="email" name="email_address" value={formData.email_address} onChange={handleChange} placeholder="Email*" required /> <br /> <br />
             <label htmlFor="city"></label>
             <input type="text" id="city" name="city" value={formData.city} onChange={handleChange} placeholder="City*" required /> <br /> <br />
           </div>
           <div className="form thirdrow">
 
-            <label htmlFor="phone"></label>
-            <input type="tel" id="phone" name="phone" value={formData.phone} onChange={handleChange} placeholder="Phone No" /> <br /> <br />
+            <label htmlFor="phone_number"></label>
+            <input type="tel" id="phone" name="phone_number" value={formData.phone_number} onChange={handleChange} placeholder="Phone No" /> <br /> <br />
             <label htmlFor="state"></label>
             <input type="text" id="state" name="state" value={formData.state} onChange={handleChange} placeholder="State*" required /> <br /> <br />
           </div>

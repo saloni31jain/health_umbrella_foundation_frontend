@@ -23,7 +23,7 @@ function App() {
         <Route path="/about-us" exact element={<Home />}></Route>
         {/* Need to create child pages routes for diseases */}
         <Route path="/diseases" exact element={<Diseases/>}></Route>
-        <Route path="/share-experience" exact element={<Articles />}></Route>
+        <Route path="/share-experience" exact element={<ShareExp/>}></Route>
         <Route path="/ask-suggestion" exact element={<Suggestion />}></Route>
         <Route path="/pathy" exact element={<Home />}></Route>
         <Route path="/clinics-hospitals" exact element={<Home />}></Route> 

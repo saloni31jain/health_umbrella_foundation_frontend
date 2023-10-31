@@ -11,6 +11,7 @@ import Diseases from "./Components/diseases/diseases";
 import Joinus from "./Components/JoinUs/Joinus";
 import Suggestion from "./Components/Suggestion/suggestion"
 import DirectCases from "./Components/DirectCases/directcases"
+import ShareExp from "./Components/ShareExp/ShareExp";
 
 function App() {
   
@@ -27,9 +28,10 @@ function App() {
         <Route path="/pathy" exact element={<Home />}></Route>
         <Route path="/clinics-hospitals" exact element={<Home />}></Route> 
         <Route path="/books" exact element={<Books />}></Route> 
-        <Route path="/ejournal" exact element={<Ejournal />}></Route> 
+        <Route path="/ejournal" exact element={<Ejournal />}></Route>
         <Route path="/join-us" exact element={<Joinus />}></Route> 
         <Route path="/directcases" exact element={<DirectCases />}></Route> 
+        
       </Routes>
       <Footer />
     </div>

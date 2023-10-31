@@ -11,7 +11,7 @@ import Diseases from "./Components/diseases/diseases";
 import Joinus from "./Components/JoinUs/Joinus";
 import Suggestion from "./Components/Suggestion/suggestion"
 import DirectCases from "./Components/DirectCases/directcases"
-import Accupressure from "./Components/Accupressure/accupressure";
+import ShareExp from "./Components/ShareExp/ShareExp";
 
 function App() {
   
@@ -23,15 +23,15 @@ function App() {
         <Route path="/about-us" exact element={<Home />}></Route>
         {/* Need to create child pages routes for diseases */}
         <Route path="/diseases" exact element={<Diseases/>}></Route>
-        <Route path="/share-experience" exact element={<Articles />}></Route>
+        <Route path="/share-experience" exact element={<ShareExp/>}></Route>
         <Route path="/ask-suggestion" exact element={<Suggestion />}></Route>
         <Route path="/pathy" exact element={<Home />}></Route>
         <Route path="/clinics-hospitals" exact element={<Home />}></Route> 
         <Route path="/books" exact element={<Books />}></Route> 
-        <Route path="/ejournal" exact element={<Ejournal />}></Route> 
+        <Route path="/ejournal" exact element={<Ejournal />}></Route>
         <Route path="/join-us" exact element={<Joinus />}></Route> 
         <Route path="/directcases" exact element={<DirectCases />}></Route> 
-        <Route path="/accupressure" exact element={<Accupressure />}></Route> 
+        
       </Routes>
       <Footer />
     </div>

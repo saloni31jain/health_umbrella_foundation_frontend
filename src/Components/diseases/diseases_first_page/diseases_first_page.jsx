@@ -12,6 +12,7 @@ const thinScrollbarStyle = {
 
 const Top = ({data}) => {
   const [isReadMore, setIsReadMore] = useState(false);
+  const [isReadMore2, setIsReadMore2] = useState(false);
  
   return (
     <>
@@ -25,12 +26,21 @@ const Top = ({data}) => {
           <div className="disease-right">
             <h1 style={{textTransform:"capitalize"}}>{data.disease}</h1>
             <p>
-           {data.text}
-           {/* {TEXT} */}
+              {/* {data.text} */}
+            {isReadMore2 ? `${data.text}` : `${data.text}`.slice(0, 270)}
+            <a
+                onClick={() => {
+                  setIsReadMore2(!isReadMore2);
+                }}
+                style={{ color: "blue", cursor: "pointer" }}
+              >
+                <br />
+               {!isReadMore2?"Read More...":"...Read Less"}
+              </a>
             </p>
             <h2>Summary</h2>
             <p>
-              {isReadMore ? `${data.summary}` : `${data.summary}`.slice(0, 400)}
+              {isReadMore ? `${data.summary}` : `${data.summary}`.slice(0, 270)}
               {/* {isReadMore ? TEXT : TEXT.slice(0, 400)} */}
 
               <a

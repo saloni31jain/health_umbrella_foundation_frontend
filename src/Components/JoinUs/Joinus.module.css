@@ -123,6 +123,11 @@
   font-weight: 500;
   flex-shrink: 0;
 }
+.filename{
+  font-size: 13px;
+  align-self: center;
+  margin-bottom: 0.5rem;
+}
 .upload {
   padding-top: 0.2rem;
   border-radius: 0.7rem;
@@ -216,5 +221,12 @@
   }
   .upload_photo {
     margin-right: 10rem;
+    flex-wrap: wrap;
+  }
+  .filename {
+    white-space: nowrap;       /* Prevent text from wrapping */
+    overflow: hidden;         /* Hide overflowed text */
+    text-overflow: ellipsis;  /* Show ellipsis (...) when text overflows */
+    max-width: 50%;
   }
 }

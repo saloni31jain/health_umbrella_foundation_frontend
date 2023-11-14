@@ -12,11 +12,14 @@ import Joinus from "./Components/JoinUs/Joinus";
 import Suggestion from "./Components/Suggestion/suggestion"
 import DirectCases from "./Components/DirectCases/directcases"
 import ShareExp from "./Components/ShareExp/ShareExp";
+import OurTeam from "./Components/OurTeam/OurTeam";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   
   return (
     <div className="App">
+    
       <Header />
       <Routes>
         <Route path="/" exact element={<Home />}></Route> 
@@ -31,8 +34,10 @@ function App() {
         <Route path="/ejournal" exact element={<Ejournal />}></Route>
         <Route path="/join-us" exact element={<Joinus />}></Route> 
         <Route path="/directcases" exact element={<DirectCases />}></Route> 
+        <Route path="/our-team" exact element={<OurTeam />}></Route> 
         
       </Routes>
+      
       <Footer />
     </div>
   );

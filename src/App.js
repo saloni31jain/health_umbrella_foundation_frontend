@@ -13,10 +13,13 @@ import Suggestion from "./Components/Suggestion/suggestion"
 import DirectCases from "./Components/DirectCases/directcases"
 import ShareExp from "./Components/ShareExp/ShareExp";
 import Accupressure from "./Components/Accupressure/accupressure"
+import OurTeam from "./Components/OurTeam/OurTeam";
+
 function App() {
   
   return (
     <div className="App">
+    
       <Header />
       <Routes>
         <Route path="/" exact element={<Home />}></Route> 
@@ -33,8 +36,10 @@ function App() {
         <Route path="/directcases" exact element={<DirectCases />}></Route> 
         <Route path="/accupressure" exact element={<Accupressure/>}></Route> 
         
+        <Route path="/our-team" exact element={<OurTeam />}></Route> 
         
       </Routes>
+      
       <Footer />
     </div>
   );

@@ -12,7 +12,7 @@ import Joinus from "./Components/JoinUs/Joinus";
 import Suggestion from "./Components/Suggestion/suggestion"
 import DirectCases from "./Components/DirectCases/directcases"
 import ShareExp from "./Components/ShareExp/ShareExp";
-
+import Accupressure from "./Components/Accupressure/accupressure"
 function App() {
   
   return (
@@ -31,6 +31,8 @@ function App() {
         <Route path="/ejournal" exact element={<Ejournal />}></Route>
         <Route path="/join-us" exact element={<Joinus />}></Route> 
         <Route path="/directcases" exact element={<DirectCases />}></Route> 
+        <Route path="/accupressure" exact element={<Accupressure/>}></Route> 
+        
         
       </Routes>
       <Footer />

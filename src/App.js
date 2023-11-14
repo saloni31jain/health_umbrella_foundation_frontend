@@ -31,9 +31,7 @@ function App() {
         <Route path="/ejournal" exact element={<Ejournal />}></Route>
         <Route path="/join-us" exact element={<Joinus />}></Route> 
         <Route path="/directcases" exact element={<DirectCases />}></Route> 
-        <Route path="/accupressure" exact element={<Accupressure/>}></Route> 
-        
-        
+        <Route path="/accupressure" exact element={<Accupressure/>}></Route>       
       </Routes>
       <Footer />
     </div>

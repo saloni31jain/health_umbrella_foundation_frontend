@@ -7,6 +7,7 @@ import axios from "axios";
 const Joinus = () => {
   const fileInputRef = useRef(null);
   const documentFileInputRef = useRef();
+  const [fileName,setfileName]=useState({file1:"",file2:""});
   const [formData, setFormData] = useState({
     name: "",
     age: "",
@@ -23,37 +24,56 @@ const Joinus = () => {
     photograph: null,
     document: null,
   });
-  
+
   const handleFileChange = (event, name) => {
+   
     const file = event.target.files[0];
-    if(file){
-    const fileType = file.type;
-    const photographAllowedTypes = ["image/jpeg", "image/jpg", "image/png", "application/pdf"];
-    const documentAllowedTypes = ["application/pdf"];
-  
-    if (name === "photograph" && photographAllowedTypes.includes(fileType)) {
-      setFormData({
-        ...formData,
-        photograph: file,
-      });
-    } else if (name === "document" && documentAllowedTypes.includes(fileType)) {
-      setFormData({
-        ...formData,
-        document: file,
-      });
-    } else {
-      toast.error(
-        name === "photograph"
-          ? "Please upload a .jpg, .jpeg, .png, or .pdf file!"
-          : "Please upload a .pdf file!",
-        {
-          position: toast.POSITION.BOTTOM_RIGHT,
-        }
-      );
+    
+    if (file) {
+      const fileType = file.type;
+      const photographAllowedTypes = [
+        "image/jpeg",
+        "image/jpg",
+        "image/png",
+        "application/pdf",
+      ];
+      const documentAllowedTypes = ["application/pdf"];
+
+      if (name === "photograph" && photographAllowedTypes.includes(fileType)) {
+        setFormData({
+          ...formData,
+          photograph: file,
+        });
+        setfileName({
+          ...fileName,
+          file1:file.name,
+        });
+        
+      } else if (
+        name === "document" &&
+        documentAllowedTypes.includes(fileType)
+      ) {
+        setFormData({
+          ...formData,
+          document: file,
+        });
+        setfileName({
+          ...fileName,
+          file2:file.name,
+        });
+      } else {
+        toast.error(
+          name === "photograph"
+            ? "Please upload a .jpg, .jpeg, .png, or .pdf file!"
+            : "Please upload a .pdf file!",
+          {
+            position: toast.POSITION.BOTTOM_RIGHT,
+          }
+        );
+      }
     }
-  }
   };
-  
+
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     setFormData({
@@ -81,12 +101,12 @@ const Joinus = () => {
         }
       );
       toast.success("Information successfully submitted!", {
-        position: toast.POSITION.TOP_RIGHT,
+        position: toast.POSITION.BOTTOM_RIGHT,
       });
       console.log("Response from backend:", response.data);
     } catch (error) {
       toast.error("Error !", {
-        position: toast.POSITION.TOP_RIGHT,
+        position: toast.POSITION.BOTTOM_RIGHT,
       });
     }
   };
@@ -240,11 +260,7 @@ const Joinus = () => {
             ></textarea>
             <div className={`${styles.upload_file}`}>
               <div className={styles.upload_photo}>Recent Photograph :</div>
-              <label
-                onClick={handleUploadClick}
-                className={styles.upload}
-          
-              >
+              <label onClick={handleUploadClick} className={styles.upload}>
                 <FiUpload size={18} color="#000000" /> Upload
               </label>
               <input
@@ -257,6 +273,7 @@ const Joinus = () => {
                 hidden
                 ref={fileInputRef}
               ></input>
+              <div className={styles.filename}>{fileName.file1}</div>
             </div>
             <div className={styles.upload_file}>
               <div style={{ marginRight: "2rem" }}>
@@ -273,13 +290,14 @@ const Joinus = () => {
                 required
                 ref={documentFileInputRef}
                 accept=".pdf"
-                 hidden
+                hidden
                 name="document"
                 onChange={(e) => handleFileChange(e, "document")}
                 type="file"
                 id="docu"
                 style={{ marginLeft: "0.5%" }}
               ></input>
+              <div className={styles.filename}>{fileName.file2}</div>
             </div>
             <div className={styles.terms}>
               <input

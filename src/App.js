@@ -12,6 +12,8 @@ import Joinus from "./Components/JoinUs/Joinus";
 import Suggestion from "./Components/Suggestion/suggestion"
 import DirectCases from "./Components/DirectCases/directcases"
 import ShareExp from "./Components/ShareExp/ShareExp";
+import Feedback from "./Components/Feedback/Feedback";
+
 
 function App() {
   
@@ -31,6 +33,7 @@ function App() {
         <Route path="/ejournal" exact element={<Ejournal />}></Route>
         <Route path="/join-us" exact element={<Joinus />}></Route> 
         <Route path="/directcases" exact element={<DirectCases />}></Route> 
+        <Route path="/feedback" exact element = {<Feedback />}></Route>
         
       </Routes>
       <Footer />
